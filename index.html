@@ -3,10 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
+    <title>Creative Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .hero-text {
+            max-width: 800px;
+            margin: 60px auto;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 60px 0;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Esta es mi primera página web en GitHub.</p>
+    <div class="container">
+        <header>
+            <h1>Creative Studio</h1>
+            <p class="subtitle">Diseño, producción y el arte de lo posible</p>
+        </header>
+
+        <section class="hero-text">
+            <p>Somos artistas, diseñadores, productores y creativos. Trabajamos juntos para crear experiencias inmersivas y dar vida a las ideas en espacios del mundo real.</p>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Creative Studio. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>
